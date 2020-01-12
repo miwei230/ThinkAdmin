@@ -117,6 +117,48 @@
         ]
     },
     {
+        "name": "mi8888/thinkadmin-addons",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://gitee.com/mi8888/think-admin-addons.git",
+            "reference": "eca2003d8dae72466d8cb8267899fde1a77ce550"
+        },
+        "require": {
+            "php": ">=5.6.0",
+            "topthink/think-helper": ">=1.0.4",
+            "zoujingli/think-library": "*"
+        },
+        "time": "2019-12-26T01:40:52+00:00",
+        "type": "library",
+        "extra": {
+            "think-config": {
+                "addons": "src/config.php"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "src/helper.php"
+            ],
+            "psr-4": {
+                "addons\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "mit"
+        ],
+        "authors": [
+            {
+                "name": "brucemi",
+                "email": "2777314125@qq.com"
+            }
+        ],
+        "description": "ThinkAdmin Addons Library"
+    },
+    {
         "name": "qiniu/php-sdk",
         "version": "v7.2.10",
         "version_normalized": "7.2.10.0",
@@ -295,6 +337,53 @@
             "orm",
             "thinkphp"
         ]
+    },
+    {
+        "name": "topthink/think-helper",
+        "version": "v3.1.3",
+        "version_normalized": "3.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/top-think/think-helper.git",
+            "reference": "4d85dfd3778623bbb1de3648f1dcd0c82f4439f4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/top-think/think-helper/zipball/4d85dfd3778623bbb1de3648f1dcd0c82f4439f4",
+            "reference": "4d85dfd3778623bbb1de3648f1dcd0c82f4439f4",
+            "shasum": "",
+            "mirrors": [
+                {
+                    "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                    "preferred": true
+                }
+            ]
+        },
+        "require": {
+            "php": ">=7.1.0"
+        },
+        "time": "2019-09-30T02:36:48+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "think\\": "src"
+            },
+            "files": [
+                "src/helper.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "yunwuxin",
+                "email": "448901948@qq.com"
+            }
+        ],
+        "description": "The ThinkPHP6 Helper Package"
     },
     {
         "name": "topthink/think-installer",

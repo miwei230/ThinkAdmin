@@ -17,6 +17,7 @@
     {block name="style"}{/block}
     <script>window.ROOT_URL = '__ROOT__';</script>
     <script src="__ROOT__/static/plugs/jquery/pace.min.js"></script>
+{taglib name='\addons\taglib\Preload'}{Preload:css /}
 </head>
 
 <body class="layui-layout-body">
@@ -123,6 +124,7 @@
 <script src="__ROOT__/static/plugs/require/require.js"></script>
 <script src="__ROOT__/static/admin.js"></script>
 {block name='script'}{/block}
+{Preload:js /}
 </body>
 
 </html>

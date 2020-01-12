@@ -7,5 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '841780ea2e1d6545ea3a253239d59c05' => $vendorDir . '/qiniu/php-sdk/src/Qiniu/functions.php',
+    '9b552a3cc426e3287cc811caefa3cf53' => $vendorDir . '/topthink/think-helper/src/helper.php',
     '8dafcc6956460bc297e00381fed53e11' => $vendorDir . '/zoujingli/think-library/src/common.php',
+    '8e8c81e32b32cad018f7678e7a18a3ed' => $vendorDir . '/mi8888/thinkadmin-addons/src/helper.php',
 );

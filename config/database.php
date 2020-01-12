@@ -1,37 +1,26 @@
 <?php
 
-// +----------------------------------------------------------------------
-// | ThinkAdmin
-// +----------------------------------------------------------------------
-// | 版权所有 2014~2019 广州楚才信息科技有限公司 [ http://www.cuci.cc ]
-// +----------------------------------------------------------------------
-// | 官方网站: http://demo.thinkadmin.top
-// +----------------------------------------------------------------------
-// | 开源协议 ( https://mit-license.org )
-// +----------------------------------------------------------------------
-// | gitee 开源项目：https://gitee.com/zoujingli/ThinkAdmin
-// | github开源项目：https://github.com/zoujingli/ThinkAdmin
-// +----------------------------------------------------------------------
-
-return [
-    // 数据库调试模式
-    'debug'       => true,
-    // 数据库类型
-    'type'        => 'mysql',
-    // 服务器地址
-    'hostname'    => '127.0.0.1',
-    // 数据库名
-    'database'    => 'admin_v5',
-    // 用户名
-    'username'    => 'admin_v5',
-    // 密码
-    'password'    => 'FbYBHcWKr2',
-    // 编码
-    'charset'     => 'utf8mb4',
-    // 端口
-    'hostport'    => '3306',
-    // 主从
-    'deploy'      => 0,
-    // 分离
-    'rw_separate' => false,
+return 
+[
+	'type' =>  env('database.type' ,'mysql'),
+	'hostname' =>  env('database.hostname' ,'127.0.0.1'),
+	'database' =>  env('database.database' ,'thinkadminv5'),
+	'username' =>  env('database.username' ,'root'),
+	'password' =>  env('database.password' ,'root'),
+	'hostport' =>  env('database.hostport' ,'3306'),
+	'params' =>array (
+),
+	'charset' =>  env('database.charset' ,'utf8mb4'),
+	'prefix' =>'',
+	'debug' =>false,
+	'deploy' =>0,
+	'rw_separate' =>false,
+	'master_num' =>1,
+	'slave_no' =>'',
+	'fields_strict' =>true,
+	'resultset_type' =>'array',
+	'auto_timestamp' =>false,
+	'datetime_format' =>'Y-m-d H:i:s',
+	'sql_explain' =>false,
+	'query' =>'\\think\\db\\Query',
 ];
